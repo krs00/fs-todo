@@ -1,1 +1,5 @@
 @import url("reset.css");
+
+html {
+    font-family: "Inter", sans-serif;
+}
