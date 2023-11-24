@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-function MoreTesting() {
+function AddPage() {
 
     return (
       <>
-        <h1>more testing page</h1>
+        <h1>Add a To-Do</h1>
 
         <Link to="/">nowhere to go but home</Link>
          
@@ -12,5 +12,5 @@ function MoreTesting() {
     )
   }
   
-  export default MoreTesting 
+  export default AddPage 
   
