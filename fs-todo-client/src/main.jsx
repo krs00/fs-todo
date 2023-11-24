@@ -5,8 +5,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './App.jsx'
 
 import TestPage from './views/TestPage.jsx'
+import MoreTesting from "./views/MoreTesting.jsx";
 
 import './index.css'
+import DefaultProfile from "./components/DefaultProfile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "testpage", 
     element: <TestPage />,
+    children: [
+      { index: true, element: <DefaultProfile /> },
+      { path: "moretesting", element: <MoreTesting /> }
+    ]
   },
 ]);
 

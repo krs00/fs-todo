@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 function TestPage() {
 
@@ -8,6 +9,8 @@ function TestPage() {
         <h2>I am learning about react router!</h2>
 
         <Link to="/">go to home page</Link>
+         
+        <Outlet /> 
          
       </>
     )
