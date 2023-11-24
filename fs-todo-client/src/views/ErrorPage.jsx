@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 const ErrorPage = () => {
   return (
     <div>
-      <h1>This is the error page!! You are on a route that does not exist!!</h1>
+      <h1>This page does not exist</h1>
+
+      <br></br>
+
       <Link to="/">
-        You can go back to the home page by clicking here, though!
+        go back to home
       </Link> 
     </div>
   );
